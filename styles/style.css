@@ -167,10 +167,11 @@ nav ul li a {
 
 .burger {
   display: none;
-  z-index: 99;
+  z-index: 999;
   position: fixed;
   top: 33px;
   right: 35px;
+  cursor: pointer;
 }
 
 /* Hero Section */

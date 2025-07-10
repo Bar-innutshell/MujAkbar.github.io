@@ -35,7 +35,7 @@
   /* Navigation */
   nav {
     position: fixed;
-    width: 50%;
+    width: 70%;
     right: 0;
     top: 0;
     height: 100vh;
@@ -45,6 +45,7 @@
     z-index: 9;
     transform: translateX(100%);
     transition: 0.2s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   }
 
   nav ul {
@@ -121,5 +122,27 @@
 
   .pre-title {
     font-size: 0.7rem;
+  }
+  
+  /* Navigation for smaller screens */
+  nav {
+    width: 80%;
+  }
+  
+  .burger {
+    top: 25px;
+    right: 25px;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  nav {
+    width: 85%;
+  }
+  
+  .burger {
+    top: 20px;
+    right: 20px;
   }
 }
